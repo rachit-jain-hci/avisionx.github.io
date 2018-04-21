@@ -131,6 +131,10 @@
     function new_tasklist(s){
       var from_index=s.indexOf("from");
       var at_index=s.lastIndexOf("at");
+      if(s.charAt[at_index-1]!=' ')
+      	at_index=-1;
+      if(s.charAt[from_index-1]!=' ')
+      	from_index=-1;
       var task,loca,thyme,prime;
       var tom_index=s.lastIndexOf("tomorrow");
       if((from_index==-1) &&(at_index!=-1))
